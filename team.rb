@@ -1,7 +1,7 @@
 class Team
   attr_accessor :name, :win, :lose, :draw
   
-  def initialize(name, win, lose, draw )
+  def initialize(name, win, lose, draw)
       self.name = name
       self.win = win
       self.lose = lose
