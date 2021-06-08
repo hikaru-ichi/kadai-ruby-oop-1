@@ -1,38 +1,11 @@
 class Team
   attr_accessor :name, :win, :lose, :draw
   
-  def initialize(team_name)
-    if team_name == "Giants"
-      self.name = team_name
-      self.win = 67
-      self.lose = 45
-      self.draw = 8
-    elsif team_name == "Tigers"
-      self.name = team_name
-      self.win = 60
-      self.lose = 53
-      self.draw = 7
-    elsif team_name == "Dragons"
-      self.name = team_name
-      self.win = 60
-      self.lose = 55
-      self.draw = 5
-    elsif team_name == "BayStars"
-      self.name = team_name
-      self.win = 56
-      self.lose = 58
-      self.draw = 6
-    elsif team_name == "Carp"
-      self.name = team_name
-      self.win = 52
-      self.lose = 56
-      self.draw = 12
-    elsif team_name == "Swallows"
-      self.name = team_name
-      self.win = 41
-      self.lose = 69
-      self.draw = 10
-    end
+  def initialize(name, win, lose, draw )
+      self.name = name
+      self.win = win
+      self.lose = lose
+      self.draw = draw
   end
   
   def calc_win_rate
@@ -46,21 +19,21 @@ class Team
 
 end
 
-Giants_Team = Team.new('Giants')
-Giants_Team.show_team_result
+giants_team = Team.new('Giants',67,45,8)
+giants_team.show_team_result
 
-Tigers_Team = Team.new('Tigers')
-Tigers_Team.show_team_result
+tigers_team = Team.new('Tigers',60,53,7)
+tigers_team.show_team_result
 
-Dragons_Team = Team.new('Dragons')
-Dragons_Team.show_team_result
+dragons_team = Team.new('Dragons',60,55,5)
+dragons_team.show_team_result
 
-BayStars_Team = Team.new('BayStars')
-BayStars_Team.show_team_result
+baystars_team = Team.new('BayStars',56,58,6)
+baystars_team.show_team_result
 
-Carp_Team = Team.new('Carp')
-Carp_Team.show_team_result
+carp_team = Team.new('Carp',52,56,12)
+carp_team.show_team_result
 
-Swallows_Team = Team.new('Swallows')
-Swallows_Team.show_team_result 
+swallows_team = Team.new('Swallows',41,69,10)
+swallows_team.show_team_result 
   
